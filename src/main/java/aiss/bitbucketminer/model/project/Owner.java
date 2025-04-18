@@ -1,13 +1,13 @@
+package aiss.bitbucketminer.model.project;
 
-package aiss.bitbucketminer.model.user;
-
+import aiss.bitbucketminer.model.user.userHTML;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class User {
+public class Owner {
 
-    @JsonProperty("display_name") // NOMBRE DEL USUARIO
+    @JsonProperty("display_name")
     private String displayName;
     @JsonProperty("links")
     private userHTML links;

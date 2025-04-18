@@ -5,17 +5,17 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class commitSelf {
+public class commitHTML {
 
-    @JsonProperty("self")
+    @JsonProperty("html")
     private CommitLink commitLink;
 
-    @JsonProperty("self")
+    @JsonProperty("html")
     public CommitLink getCommitLink() {
         return commitLink;
     }
 
-    @JsonProperty("self")
+    @JsonProperty("html")
     public void setCommitLink(CommitLink commitLink) {
         this.commitLink = commitLink;
     }

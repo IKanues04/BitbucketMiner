@@ -9,7 +9,7 @@ public class Commit {
 
     @JsonProperty("type")
     private String type;
-    @JsonProperty("hash")
+    @JsonProperty("hash") // commit ID
     private String hash;
     @JsonProperty("date")
     private String date;
@@ -18,7 +18,7 @@ public class Commit {
     @JsonProperty("message")
     private String message;
     @JsonProperty("links")
-    private commitSelf links;
+    private commitHTML links;
     @JsonProperty("repository")
     private Repository repository;
 
@@ -73,12 +73,12 @@ public class Commit {
     }
 
     @JsonProperty("links")
-    public commitSelf getLinks() {
+    public commitHTML getLinks() {
         return links;
     }
 
     @JsonProperty("links")
-    public void setLinks(commitSelf links) {
+    public void setLinks(commitHTML links) {
         this.links = links;
     }
 

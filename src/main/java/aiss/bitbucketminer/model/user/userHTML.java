@@ -1,21 +1,24 @@
 package aiss.bitbucketminer.model.user;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class userSelf {
+@JsonIgnoreProperties(ignoreUnknown = true)
+
+public class userHTML {
 
     @JsonProperty("avatar")
     private Avatar avatar;
 
-    @JsonProperty("self")
+    @JsonProperty("html")
     private UserLink userlink;
 
-    @JsonProperty("self")
+    @JsonProperty("html")
     public UserLink getSelf() {
         return userlink;
     }
 
-    @JsonProperty("self")
+    @JsonProperty("html")
     public void setSelf(UserLink userlink) {
         this.userlink = userlink;
     }
