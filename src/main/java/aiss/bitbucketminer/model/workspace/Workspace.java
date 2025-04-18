@@ -14,8 +14,8 @@ public class Workspace {
     private String name;
     @JsonProperty("slug")
     private String slug;
-    @JsonProperty("links")
-    private Links__1 links;
+    // @JsonProperty("links")
+    // private Links__1 links;
 
     @JsonProperty("type")
     public String getType() {
@@ -56,7 +56,7 @@ public class Workspace {
     public void setSlug(String slug) {
         this.slug = slug;
     }
-
+/*
     @JsonProperty("links")
     public Links__1 getLinks() {
         return links;
@@ -66,6 +66,8 @@ public class Workspace {
     public void setLinks(Links__1 links) {
         this.links = links;
     }
+
+ */
 
 
 }
