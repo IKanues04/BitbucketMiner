@@ -1,26 +1,27 @@
 package aiss.bitbucketminer.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Comment {
 
-    // ATRIBUTOS
-
+    @JsonProperty("id")
     private String id;
+
+    @JsonProperty("body")
     private String body;
+
+    @JsonProperty("created_at")
     private String createdAt;
+
+    @JsonProperty("updated_at")
     private String updatedAt;
 
-    private User author;
 
-    // INICIALIZACION DE ATRIBUTOS
-
-    public Comment () {}
-
-    public Comment(String id, String body, String createdAt, String updatedAt, User author) {
+    public Comment(String id, String body, String createdAt, String updatedAt) {
         this.id = id;
         this.body = body;
         this.createdAt = createdAt;
         this.updatedAt = updatedAt;
-        this.author = author;
     }
 
     // GETTERS Y SETTERS
@@ -58,13 +59,6 @@ public class Comment {
         this.updatedAt = updatedAt;
     }
 
-    public User getAuthor() {
-        return author;
-    }
-
-    public void setAuthor(User author) {
-        this.author = author;
-    }
 
     @Override
     public String toString() {
@@ -72,8 +66,7 @@ public class Comment {
                 "id='" + id + '\'' +
                 ", body='" + body + '\'' +
                 ", createdAt='" + createdAt + '\'' +
-                ", updatedAt='" + updatedAt + '\'' +
-                ", author=" + author +
+                ", updatedAt='" + updatedAt +
                 '}';
     }
 }
