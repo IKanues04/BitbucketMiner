@@ -1,19 +1,24 @@
 
 package aiss.bitbucketminer.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class User {
 
-    // ATRIBUTOS
-
+    @JsonProperty("id")
     private String id;
+
+    @JsonProperty("username")
     private String username;
+
+    @JsonProperty("name")
     private String name;
+
+    @JsonProperty("avatar_url")
     private String avatarUrl;
+
+    @JsonProperty("web_url")
     private String webUrl;
-
-    // INICIALIZACION DE ATRIBUTOS
-
-    public User () {}
 
     public User(String id, String username, String name, String avatarUrl, String webUrl) {
         this.id = id;
