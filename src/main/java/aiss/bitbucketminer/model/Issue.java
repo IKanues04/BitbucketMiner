@@ -135,4 +135,22 @@ public class Issue {
     public void setComments(List<Comment> comments) {
         this.comments = comments;
     }
+
+    @Override
+    public String toString() {
+        return "Issue{" +
+                "id='" + id + '\'' +
+                ", title='" + title + '\'' +
+                ", description='" + description + '\'' +
+                ", state='" + state + '\'' +
+                ", createdAt='" + createdAt + '\'' +
+                ", updatedAt='" + updatedAt + '\'' +
+                ", closedAt='" + closedAt + '\'' +
+                ", labels=" + labels +
+                ", votes=" + votes +
+                ", assignee=" + assignee +
+                ", author=" + author +
+                ", comments=" + comments +
+                '}';
+    }
 }

@@ -64,4 +64,18 @@ public class User {
     public void setWebUrl(String webUrl) {
         this.webUrl = webUrl;
     }
+
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id='" + id + '\'' +
+                ", username='" + username + '\'' +
+                ", name='" + name + '\'' +
+                ", avatarUrl='" + avatarUrl + '\'' +
+                ", webUrl='" + webUrl + '\'' +
+                '}';
+    }
 }
+
+

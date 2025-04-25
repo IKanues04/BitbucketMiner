@@ -87,5 +87,18 @@ public class Commit {
     public void setWebUrl(String webUrl) {
         this.webUrl = webUrl;
     }
+
+    @Override
+    public String toString() {
+        return "Commit{" +
+                "id='" + id + '\'' +
+                ", title='" + title + '\'' +
+                ", message='" + message + '\'' +
+                ", authorName='" + authorName + '\'' +
+                ", authorEmail='" + authorEmail + '\'' +
+                ", authoredDate='" + authoredDate + '\'' +
+                ", webUrl='" + webUrl + '\'' +
+                '}';
+    }
 }
 
